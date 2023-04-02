@@ -1,18 +1,15 @@
 #include "main.h"
-#include <stdio.h>
-
+#include <string.h>
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * *_strcpy -  copies the string pointed to by src.
+ * @dest: array
+ * @src: lenght of array
+ * Return: char
  */
-int main(void)
+char *_strcpy(char *dest, char *src)
 {
-    char s1[98];
-    char *ptr;
+	char *res;
 
-    ptr = _strcpy(s1, "First, solve the problem. Then, write the code\n");
-    printf("%s", s1);
-    printf("%s", ptr);
-    return (0);
+	res = strcpy(dest, src);
+	return (res);
 }
